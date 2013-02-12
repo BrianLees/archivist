@@ -37,3 +37,11 @@ end
 Then /^the mark should be "([^"]*)"$/ do |mark|
   output.messages.should include(mark)
 end
+
+When /^I have a step def with a ([^"]*) variable and a$/ do |variable, table|
+  puts "Do nothing please!"
+end
+
+Given /^I have a step with "([^"]*)" and "([^"]*)"$/ do |first, second|
+  puts "Again, do nothing."
+end
